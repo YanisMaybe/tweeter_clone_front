@@ -1,0 +1,147 @@
+.HomePage .content .tweetsZone .tweets,
+body {
+    .Tweet {
+        background: white;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 8px;
+        padding: 20px 18px;
+        margin-bottom: 23px;
+
+        .head {
+            display: flex;
+            align-items: center;
+            img {
+                width: 40px;
+                border-radius: 8px;
+                margin-right: 10px;
+            }
+            .userNameAndDate {
+                .name {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.035em;
+                    margin: 0;
+                    color: #000000;
+                    margin-bottom: 2px;
+                }
+                .date {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.035em;
+                    margin: 0;
+                }
+            }
+            .griser {
+                color: #bdbdbd;
+            }
+        }
+        .content {
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 0;
+            height: 100%;
+            min-height: 0;
+            .message {
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.035em;
+                color: #4f4f4f;
+            }
+            .statistiques {
+                display: flex;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: -0.035em;
+
+                width: 100%;
+                justify-content: flex-end;
+                background: white;
+                .numberOfComments,
+                .numberOfRetweets {
+                    margin-right: 16px;
+                }
+            }
+            .potontialPicture {
+                width: 100%;
+                img {
+                    border-radius: 8px;
+                    width: 100%;
+                    margin-top: 6px;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .interactionZone {
+            display: flex;
+            justify-content: space-around;
+            .retweetButtonResolveProblem {
+                position: absolute;
+                border: 0;
+                outline: 0;
+                width: 90px;
+                background: white;
+                height: 47px;
+                opacity: 0;
+            }
+            .interactionButton {
+                display: flex;
+                align-items: center;
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 19px;
+                    letter-spacing: -0.035em;
+                    color: #4f4f4f;
+                    margin-left: 13.93px;
+                }
+            }
+            .retweetedButtonM {
+                svg {
+                    fill: #27ae60;
+                }
+                p {
+                    color: #27ae60;
+                }
+            }
+            .savedButton {
+                svg {
+                    fill: #2d9cdb;
+                }
+                p {
+                    color: #2d9cdb;
+                }
+            }
+            .likedButton {
+                svg {
+                    fill: #eb5757;
+                }
+                p {
+                    color: #eb5757;
+                }
+            }
+        }
+    }
+}
+.HomePage .content .tweetsZone .ifYouRetwetted {
+    display: flex;
+    align-items: center;
+    width: 112px;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.035em;
+    color: #828282;
+    position: relative;
+    right: 20px;
+}
+.griser {
+    color: #bdbdbd;
+}

@@ -1,0 +1,15 @@
+#headerBottom{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 61px;
+    width: 100%;
+
+    > .pagesZoneSpe{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 7vh;
+        height: 100%;
+    }
+}

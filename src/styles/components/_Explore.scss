@@ -1,0 +1,107 @@
+.bottomPartOfExplorePage {
+    background: #f2f2f2;
+    min-height: 92vh;
+
+    .containerOfBtmPart {
+        padding: 34.19px 12.8%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+        .rightPartOfBtmPrtOfContainer{
+            >.sortedTweets:nth-child(2){
+                position: relative;
+                left: 24px;
+            }
+        }
+
+        >.seeTweetsOfWorld{
+            display: flex;
+            width: 41%;
+            min-width: 119px;
+
+            .tweetChoicer25{
+                width: 100%;
+            }
+        }
+        .searchTweetBloc {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+            border-radius: 8px;
+            height: 54px;
+            width: 100%;
+            margin-bottom: 16.55px;
+            position: relative;
+            left: 24px;
+
+            .containerOfSearchTwtBlc {
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 11.94px;
+
+                .searchInputManagement {
+                    .RLsearchInput {
+                        input {
+                            border: none;
+                            outline: none;
+                            background: transparent;
+
+                            width: 100%;
+                            min-width: 366px;
+                        }
+                    }
+                }
+                .submitInputManagement {
+                    .RLsubmitButton {
+                        button {
+                            background: #2f80ed;
+                            border-radius: 4px;
+                            border: none;
+                            outline: none;
+                            color: white;
+                            width: 80px;
+                            height: 30px;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 16px;
+                            letter-spacing: -0.035em;
+                            transition: 0.2s;
+                            margin-left: 19px;
+                        }
+                    }
+                }
+            }
+        }
+        .sortedTweets{
+
+            .trendsForUser{
+
+                .userBlocOfTrends{
+                    height: 82px;
+                    background: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    border-bottom: 1px solid #dee8ea;
+                    padding: 4px 0;
+                    transition: 0.2s;
+
+                    &:hover{
+                        background:#f7f7f7;
+                    }
+
+                    .containerOfUserBlocOfTrends{
+                        padding: 0 8px;
+
+                        p{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

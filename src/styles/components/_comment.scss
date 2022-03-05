@@ -1,0 +1,80 @@
+.latestComments {
+    margin-top: 32px;
+    
+}
+.comment {
+    .principaleFunc {
+        display: flex;
+        .outOfPictureYouNow{
+            width: 100%;
+            padding-right: 33px;
+        }
+        .TheMessageOfCommente {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 7px 16px;
+            width: 100%;
+
+            p {
+                margin: 0;
+            }
+            .TheHeadPartOfComment {
+                display: flex;
+                align-items: center;
+                margin-bottom: 3px;
+                .commentNameOfComment {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: -0.035em;
+                    color: #000000;
+                    margin-right: 10px;
+                }
+                .griser {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.035em;
+                }
+            }
+            .contentOfComment {
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: -0.035em;
+                color: #4f4f4f;
+                margin-bottom: 4px;
+            }
+        }
+        .supFunctions {
+            margin-top: -5px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.035em;
+            display: flex;
+            align-items: center;
+            position: relative;
+            justify-content: space-between;
+            width: 105px;
+
+            .likeFunc {
+                display: flex;
+                align-items: center;
+                margin-right: 16px;
+
+                p {
+                    margin-left: 4px;
+                }
+            }
+            .transistorTypeTwo{
+                width: 2px;
+                height: 2.5px;
+                background: #BDBDBD;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(2px);
+            }
+        }
+    }
+}

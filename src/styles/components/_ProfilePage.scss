@@ -1,0 +1,127 @@
+.userProfile {
+    background: #f2f2f2;
+    min-height: 92vh;
+    .topPart {
+        height: 290px;
+        background: #cfd9de;
+        .undefinedPhoto {
+            background: #cfd9de;
+            transition: 0.3s;
+            
+        }
+        .coverPicture {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .bottomPart {
+        width: 80%;
+        margin: auto;
+        .userBlocInformations {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 24px;
+            position: relative;
+            bottom: 61px;
+            .pictureZone2ae {
+                position: relative;
+                bottom: 47px;
+                img {
+                    border-radius: 8px;
+                    width: 152px;
+                    border: 2px solid white;
+                    height: 152px;
+                }
+            }
+            .textInformationsZone {
+                display: flex;
+                flex-direction: column;
+                margin-left: 11px;
+
+                .nameAndFollowInformations {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 284.03px;
+                    .nameInfo{
+                        margin-right: 16px;
+                    }
+                }
+                .followInfo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 189.36px;
+
+                    span {
+                        margin-right: 7px;
+                    }
+                }
+            }
+            .editActuallyUser {
+                width: 52%;
+                display: flex;
+                justify-content: flex-end;
+                height: 100%;
+                a {
+                    background: #2f80ed;
+                    border-radius: 100px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    width: 101px;
+                    position: absolute;
+                    text-align: center;
+                    top: 39px;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+            .followUserButton {
+                width: 52%;
+                display: flex;
+                justify-content: flex-end;
+                height: 100%;
+                button {
+                    background: #2f80ed;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    border-radius: 4px;
+                    height: 32px;
+                    border: none;
+                    outline: none;
+                    color: white;
+                    width: 101px;
+                    position: absolute;
+                    top: 39px;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+}
+.followBTN{
+    background: #2f80ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 3px;
+    height: 23px;
+    border: none;
+    outline: none;
+    color: white;
+    width: 83px;
+    margin-left: 50px;
+    
+    &:hover {
+        opacity: 0.7;
+    }
+}

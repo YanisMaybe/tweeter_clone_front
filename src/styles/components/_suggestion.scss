@@ -1,0 +1,122 @@
+.HomePage .content .TrendsAndFriends {
+    position: relative;
+    top: 3.445vh;
+    width: 41.4vh;
+    margin-bottom: 5vh;
+    .trends {
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+        padding: 0 19px;
+        width: 100%;
+        .intro {
+            display: flex;
+            flex-direction: column;
+            p {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                letter-spacing: -0.035em;
+                color: #4f4f4f;
+                margin: 9px 0;
+            }
+            .transistor {
+                height: 1px;
+                width: 100%;
+                background: #e0e0e0;
+            }
+        }
+        .hashtags {
+            padding-bottom: 8px;
+            .hashtag {
+                margin-bottom: 20px;
+                h3 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: -0.035em;
+                    color: #333333;
+                    margin-bottom: 4px;
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: -0.035em;
+                    margin: 0;
+                    color: #828282;
+                }
+            }
+        }
+    }
+    .whoToFollow {
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+        padding: 0px 20px;
+        width: 100%;
+
+        .intro {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: -0.035em;
+            color: #4f4f4f;
+            margin-bottom: 20px;
+            padding-top: 1px;
+            margin-top: 22.02px;
+        }
+        .friendSuggestions {
+            .friendSuggestion {
+                padding-bottom: 29px;
+                .thePerson {
+                    display: flex;
+                    align-items: center;
+                    button {
+                        background: #2f80ed;
+                        border-radius: 4px;
+                        border: none;
+                        outline: none;
+                        color: white;
+                        width: 79px;
+                        height: 24px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 16px;
+                        letter-spacing: -0.035em;
+                        transition: 0.2s;
+                        margin-left: 19px;
+
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+                .supInformations {
+                    .userBIO {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 19px;
+                        /* identical to box height */
+
+                        letter-spacing: -0.035em;
+
+                        color: #828282;
+                    }
+                    .covImage{
+                        width: 100%;
+                        height: 100px;
+                        overflow: hidden;
+                        border-radius: 8px;
+                        margin-bottom: 23px;
+
+                        img{
+                            border-radius: 8px;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

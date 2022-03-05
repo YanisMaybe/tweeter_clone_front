@@ -1,0 +1,17 @@
+.twitter-loader {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    border: 5px solid #aeddfa;
+    border-top-color: #1da1f2;
+    border-radius: 50%;
+    animation: rotate 0.7s linear infinite;
+    top: 115px;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

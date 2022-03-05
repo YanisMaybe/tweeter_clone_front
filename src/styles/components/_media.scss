@@ -1,0 +1,437 @@
+@media screen and (max-width: 1033px) {
+    .HomePage .principaleContainer .content .tweetsZone {
+        .posttweet {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+            border-radius: 12px;
+            width: 100%;
+            min-width: 0px;
+        }
+    }
+    .HomePage .principaleContainer .content .TrendsAndFriends {
+        position: relative;
+        top: 3.445vh;
+        width: 30.4vh;
+        margin-bottom: 5vh;
+    }
+}
+@media screen and (max-width: 817px) {
+    .HomePage .principaleContainer .content {
+        min-height: 92vh;
+        background: #f2f2f2;
+        display: flex;
+        align-items: flex-start;
+        padding: 0 3%;
+        position: relative;
+        justify-content: space-evenly;
+        .TrendsAndFriends {
+            display: none;
+        }
+        .HomePage .principaleContainer .content .tweetsZone {
+            .posttweet {
+                background: #ffffff;
+                box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+                border-radius: 12px;
+                width: 100%;
+                min-width: 72vh;
+            }
+        }
+    }
+    .HomePage .principaleContainer .content .tweetsZone {
+        padding: 25px 0% 0px 0;
+        max-width: 675px;
+    }
+    .HomePage .principaleContainer .content .tweetsZone .ifYouRetwetted {
+        display: flex;
+        align-items: center;
+        width: 112px;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: -0.035em;
+        color: #828282;
+        position: relative;
+        right: 4px;
+    }
+}
+@media screen and (max-width: 704px) {
+    .HomePage .principaleContainer > .header,
+    .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1.5vh;
+        position: relative;
+        height: 63px;
+        align-items: center;
+        h3 {
+            display: none;
+        }
+        > .pagesZone {
+            display: none;
+        }
+        > .profileZone {
+            .imageBloc:nth-child(1) {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .aSpecific:nth-child(2) {
+                display: none;
+            }
+            img:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    #frudti2dza5azxéé {
+        display: none;
+    }
+    .HomePage .head > .header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1.5vh;
+        position: relative;
+        height: 63px;
+        align-items: center;
+        h3 {
+            display: none;
+        }
+        > .pagesZone {
+            display: none;
+        }
+        > .profileZone {
+            .imageBloc:nth-child(1) {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .aSpecific:nth-child(2) {
+                display: none;
+            }
+            img:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    #frudti2dza5azxéé {
+        display: none;
+    }
+
+    body #root .userProfile .bottomPart .userBlocInformations {
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: 61px;
+        flex-direction: column;
+        width: 50%;
+        padding: 0 65px;
+        margin: auto;
+
+        .followUserButton {
+            width: 52%;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            margin-top: 8px;
+
+            button {
+                background: #2f80ed;
+                border-radius: 4px;
+                height: 32px;
+                border: none;
+                outline: none;
+                color: white;
+                width: 101px;
+                position: relative;
+                top: -1vh;
+                margin-left: 0;
+            }
+        }
+        .textInformationsZone {
+            display: flex;
+            flex-direction: column;
+            margin-left: 11px;
+
+            .bioText {
+                p {
+                    margin-top: 0;
+                    text-align: center;
+                    margin-right: 7px;
+                }
+            }
+            .nameAndFollowInformations {
+                display: flex;
+                justify-content: space-between;
+                width: 284.03px;
+                flex-direction: column;
+                align-items: center;
+
+                .nameInfo {
+                    margin: 0;
+                }
+                .followInfo {
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    min-height: 59px;
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+        .editActuallyUser {
+            width: 52%;
+            display: flex;
+            justify-content: center;
+
+            a {
+                background: #2f80ed;
+                border-radius: 100px;
+                border: none;
+                outline: none;
+                color: white;
+                width: 85px;
+                text-align: center;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: -1vh;
+            }
+        }
+    }
+}
+@media screen and (max-width: 760px) {
+    #root .userProfile .bottomPart .seeTweetsOfUser .tweetChoicer25 {
+        min-width: 140px;
+    }
+}
+@media screen and (min-width: 704px) {
+    #headerBottom {
+        display: none;
+    }
+    #krusofa55456ééef {
+        display: none;
+    }
+}
+@media screen and (max-width: 763px) {
+    .bottomPartOfExplorePage .containerOfBtmPart .searchTweetBloc {
+        background: #ffffff;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 8px;
+        height: 54px;
+        width: 100%;
+        margin-bottom: 16.55px;
+        position: relative;
+        left: 24px;
+
+        .containerOfSearchTwtBlc {
+            width: 100%;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 11.94px;
+            max-width: 43.5vh;
+
+            .searchInputManagement {
+                width: 73%;
+            }
+        }
+    }
+}
+@media screen and(max-width: 628px) {
+    .HomePage .bottomPartOfExplorePage .containerOfBtmPart {
+        padding: 34.19px 12.8%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .seeTweetsOfWorld {
+            display: flex;
+            width: 100%;
+            min-width: 119px;
+            margin-bottom: 15px;
+        }
+        .searchTweetBloc {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+            border-radius: 8px;
+            height: 54px;
+            width: 100%;
+            margin-bottom: 16.55px;
+            position: relative;
+            left: 0;
+        }
+        > .seeTweetsOfWorld {
+            display: flex;
+            width: 100%;
+            min-width: 119px;
+
+            .tweetChoicer25 {
+                width: 100%;
+            }
+        }
+    }
+    .HomePage .bottomPartOfExplorePage .containerOfBtmPart .rightPartOfBtmPrtOfContainer > .sortedTweets:nth-child(2) {
+        position: relative;
+        left: 0;
+    }
+    .HomePage .bottomPartOfExplorePage .containerOfBtmPart .seeTweetsOfWorld .tweetChoicer25 .tweetChoicerBloc25 {
+        max-width: 100%;
+        background: white;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 8px;
+        padding: 19px 0;
+    }
+
+    .HomePage .principaleBookmarksCotainer .containerOfPrncplContainer {
+        padding: 34.19px 12.8%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .seeTweetsOfWorld {
+            display: flex;
+            width: 100%;
+            min-width: 119px;
+            margin-bottom: 15px;
+        }
+        .bookmarksTweetsZone {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+            border-radius: 8px;
+            width: 100%;
+            margin-bottom: 16.55px;
+            position: relative;
+            left: 0;
+            height: 100%;
+        }
+        > .seeTweetsOfWorld {
+            display: flex;
+            width: 100%;
+            min-width: 119px;
+
+            .tweetChoicer25 {
+                width: 100%;
+            }
+        }
+    }
+
+    .HomePage .principaleBookmarksCotainer .containerOfPrncplContainer .bookmarksTweetsZone {
+        width: 100%;
+        margin-left: 0;
+    }
+    .HomePage
+        .principaleBookmarksCotainer
+        .containerOfPrncplContainer
+        .seeTweetsOfWorld
+        .tweetChoicer25
+        .tweetChoicerBloc25 {
+        max-width: 100%;
+        background: white;
+        box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+        border-radius: 8px;
+        padding: 19px 0;
+    }
+}
+
+@media screen and(max-width: 802px) {
+    #root .userProfile .bottomPart .userBlocInformations {
+        .pictureZone2ae img {
+            border-radius: 8px;
+            width: 120px;
+            border: 2px solid white;
+            height: 120px;
+        }
+        .textInformationsZone {
+            .nameAndFollowInformations {
+                .followInfo {
+                    display: flex;
+                    width: 38%;
+                    flex-direction: column;
+                    align-items: self-start;
+                    justify-content: space-between;
+                    min-height: 59px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .editActuallyUser a {
+            background: #2f80ed;
+            border-radius: 100px;
+            border: none;
+            outline: none;
+            color: white;
+            width: 85px;
+            position: absolute;
+            text-align: center;
+            top: 39px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and(max-width: 570px) {
+    .userProfile .bottomPart .seeTweetsOfUser {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .tweetChoicer25 .tweetChoicerBloc25 {
+            max-width: 100%;
+            background: white;
+            box-shadow: 0px 2px 4px rgb(0 0 0 / 5%);
+            border-radius: 8px;
+            padding: 19px 0;
+        }
+        div.allTweetsAndInformationsOfAPerson213 {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 35px;
+        }
+    }
+}
+@media screen and (max-width: 641px) {
+    #root > div > div > div.settingsPopupParent > div.settingsPopup {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 536px) {
+    
+    #TweetNumnberundefined > div.interactionZone,.Tweet > div.interactionZone {
+        margin-top: 7px;
+        margin-bottom: 6px;
+        > div {
+            p {
+                display: none;
+            }
+            svg {
+                transform: scale(1.5);
+            }
+        }
+        > div:nth-child(1) svg{
+            transform: scale(1.4);
+        }
+        > div:nth-child(4) svg{
+            transform: scale(1.8);
+        }
+    }
+}
