@@ -54,9 +54,6 @@ const ProfileSettings = () => {
             setTemoCovPict(actuallyUser.coverPicture)
             setImageConfigurations(false)
         }
-        //("voici les images: ")
-        //(prflImage)
-        //(covImage)
 
         if (imageConfigPonce) {
 

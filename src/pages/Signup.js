@@ -100,6 +100,7 @@ const Signup = () => {
                                         let errorBloc = document.querySelector(".errorBloc")
                                         errorBloc.classList.add("none")
                                         //("requête reussi");
+                                        
                                         window.location.replace("/login")
                                     }
                                 }

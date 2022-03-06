@@ -23,6 +23,8 @@ const Tweets = ({ user, setVerySpecialPounce,tweets }) => {
     const actuallyUser = useSelector(state=>state.actuallyUserReducer)
 
     const [Tweets,setTweets] = useState(tweetsRedux);
+
+
     const onSubmitInTweetForm = e => {
         setPounceOfReduxTweets(true)
         e.preventDefault();
@@ -36,6 +38,8 @@ const Tweets = ({ user, setVerySpecialPounce,tweets }) => {
         setPounceOfRealTweet(true)
 
     }
+
+    const [theImage,setTheImage] = useState("")
 
     const [pounceOfReduxTweets,setPounceOfReduxTweets] = useState(true)
 
@@ -70,6 +74,8 @@ const Tweets = ({ user, setVerySpecialPounce,tweets }) => {
             }
         }
     });
+
+
     return (
         <>
             <div className="tweetsZone">
@@ -201,13 +207,13 @@ const Tweets = ({ user, setVerySpecialPounce,tweets }) => {
                             if (!tweet.everyOneCanReply && tweet.posterId !== user._id) {
                                 return tweet.userFollowings.map((flw, indx) => {
                                     if (flw + "" === user._id + "") {
-                                        return <Tweet posterId = {tweet.posterId} setVerySpecialPounce = {setVerySpecialPounce} posterPseudo = {tweet.posterPseudo} theTweet = {tweet} index = {index} pounceOfTweet = {pounceOfRealTweet} userFollowings={tweet.userFollowings} posterName={tweet.posterName} user={user} key={index} likes={tweet.likes} userId={user._id} tweetId={tweet._id} date={tweet.date} userPicture={profilePicture} comments={tweet.comments} saves={tweet.saves} retweets={tweet.retweets} message={tweet.text} media={tweet.media} />;
+                                        return <Tweet theImage = {theImage} setTheImage = {setTheImage} posterId = {tweet.posterId} setVerySpecialPounce = {setVerySpecialPounce} posterPseudo = {tweet.posterPseudo} theTweet = {tweet} index = {index} pounceOfTweet = {pounceOfRealTweet} userFollowings={tweet.userFollowings} posterName={tweet.posterName} user={user} key={index} likes={tweet.likes} userId={user._id} tweetId={tweet._id} date={tweet.date} userPicture={profilePicture} comments={tweet.comments} saves={tweet.saves} retweets={tweet.retweets} message={tweet.text} media={tweet.media} />;
                                     } else {
                                         return null
                                     }
                                 })
                             } else {
-                                return <Tweet posterId = {tweet.posterId} setVerySpecialPounce = {setVerySpecialPounce} posterPseudo = {tweet.posterPseudo} theTweet = {tweet} index = {index} pounceOfTweet = {pounceOfRealTweet} EmptyConfig={tweet.EmptyConfig} userFollowings={tweet.userFollowings} posterName={tweet.posterName} user={user} key={index} likes={tweet.likes} userId={user._id} tweetId={tweet._id} date={tweet.date} userPicture={profilePicture} comments={tweet.comments} saves={tweet.saves} retweets={tweet.retweets} message={tweet.text} media={tweet.media} />;
+                                return <Tweet theImage = {theImage} setTheImage = {setTheImage} posterId = {tweet.posterId} setVerySpecialPounce = {setVerySpecialPounce} posterPseudo = {tweet.posterPseudo} theTweet = {tweet} index = {index} pounceOfTweet = {pounceOfRealTweet} EmptyConfig={tweet.EmptyConfig} userFollowings={tweet.userFollowings} posterName={tweet.posterName} user={user} key={index} likes={tweet.likes} userId={user._id} tweetId={tweet._id} date={tweet.date} userPicture={profilePicture} comments={tweet.comments} saves={tweet.saves} retweets={tweet.retweets} message={tweet.text} media={tweet.media} />;
                             }
                         }
                         

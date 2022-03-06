@@ -196,12 +196,13 @@ const Tweet = ({ weAreInTheProfilePage,setVerySpecialPounce, theTweet,specialPou
 
     
     const [messageId,setMessageId] = useState(Math.random().toString(16).slice(2))
-
+    
+    
     return (
         <>
             {comments && saves && retweets && <div className="Tweet" id={myId}>
                 <div className="head">
-                    <ProfileBloc posterId = {posterId} setAnotherPounce={setAnotherPounce} posterPseudo = {posterPseudo} name={posterName} date={date} userPicture={setUserProfilePicture} />
+                    <ProfileBloc posterId = {theTweet.posterId} setAnotherPounce={setAnotherPounce} posterPseudo = {posterPseudo} name={posterName} date={date} userPicture={setUserProfilePicture} />
                 </div>
                 <div className="content">
                     <div className="message">

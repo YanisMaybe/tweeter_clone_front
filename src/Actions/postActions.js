@@ -183,7 +183,7 @@ export const unRetweetTweet = (retweeterId, tweetToUnRetweetId,date) => {
 
     }
 }
-export const commentOneTweet = (tweetToCommentId, commenterId, commenterName, commenterPicture, text, media,date) => {
+export const commentOneTweet = (tweetToCommentId, commenterId, commenterName, commenterPicture, text, media) => {
     return dispatch => {
         const formData = new FormData()
         formData.append("commenterId", commenterId)

@@ -1,7 +1,9 @@
-import React from 'react';
+import axios from 'axios';
+import React, {useState,useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 
-const ProfileBloc = ({ posterId,name, date, userPicture, setAnotherPounce,posterPseudo }) => {
+
+const ProfileBloc = ({ posterId,name, date, setAnotherPounce,posterPseudo }) => {
     let days1 = Date.now() / 1000 / 60 / 60 / 24;
     let days2 = date / 1000 / 60 / 60 / 24;
     let theTime = ""
@@ -40,38 +42,13 @@ const ProfileBloc = ({ posterId,name, date, userPicture, setAnotherPounce,poster
     
             theTime = day + " " + toDateString[2] + " " + toDateString[1] + " at " + hourR
         }
-    
-          const checkImage = (url) => {
-              var request = new XMLHttpRequest();
-              request.open("GET", url, true);
-              request.send();
-              request.onload = function() {
-                status = request.status;
-                if (request.status == 200) //if(statusText == OK)
-                {
-                  console.log("image exists");
-                  return true
-                } else {
-                  console.log("image doesn't exist");
-                  return false
-                }
-              }
-        }
-          
-        const [imageToShow,setImageToShow] = useState("")
-        
-        useEffect(()=>{
-            const validty = checkImage(`https://tweeter-clone-back-22.onrender.com/images/${posterId}.jpg`)
-            if(validity){
-                setImageToShow(`https://tweeter-clone-back-22.onrender.com/images/${posterId}.jpg`)
-            }else{
-                setImageToShow(userPicture)
-            }
-        },[imageToShow])
+     
     }
+
+   
     return (
         <div className="profileBloc">
-            <img src={imageToShow} alt="user" />
+            <img onError={(e) => {e.target.onerror = null; e.target.src = 'https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png'}} src={`https://tweeter-clone-back-22.onrender.com/images/${posterId}.jpg`} />
             <div className="userNameAndDate">
                 <a onClick = {()=>{
                     if(setAnotherPounce!==null&&setAnotherPounce!==undefined){
