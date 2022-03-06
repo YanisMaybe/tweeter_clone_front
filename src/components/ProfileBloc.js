@@ -41,10 +41,37 @@ const ProfileBloc = ({ posterId,name, date, userPicture, setAnotherPounce,poster
             theTime = day + " " + toDateString[2] + " " + toDateString[1] + " at " + hourR
         }
     
+          const checkImage = (url) => {
+              var request = new XMLHttpRequest();
+              request.open("GET", url, true);
+              request.send();
+              request.onload = function() {
+                status = request.status;
+                if (request.status == 200) //if(statusText == OK)
+                {
+                  console.log("image exists");
+                  return true
+                } else {
+                  console.log("image doesn't exist");
+                  return false
+                }
+              }
+        }
+          
+        const [imageToShow,setImageToShow] = useState("")
+        
+        useEffect(()=>{
+            const validty = checkImage(`https://tweeter-clone-back-22.onrender.com/images/${posterId}.jpg`)
+            if(validity){
+                setImageToShow(`https://tweeter-clone-back-22.onrender.com/images/${posterId}.jpg`)
+            }else{
+                setImageToShow(userPicture)
+            }
+        },[imageToShow])
     }
     return (
         <div className="profileBloc">
-            <img src={`https://tweeter-clone-back-22.onrender.com/images/${posterId}.jpg`} alt="user" />
+            <img src={imageToShow} alt="user" />
             <div className="userNameAndDate">
                 <a onClick = {()=>{
                     if(setAnotherPounce!==null&&setAnotherPounce!==undefined){
